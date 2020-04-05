@@ -1,10 +1,8 @@
 import { config } from 'dotenv'
-import fs from 'fs'
+config()
+import { createHash } from 'crypto'
 import { getData, sendAnswer } from './api'
 import { decrypt } from './caesar-cipher'
-import { createHash } from 'crypto'
-
-config()
 
 async function processChallenge() {
   const response = await getData()

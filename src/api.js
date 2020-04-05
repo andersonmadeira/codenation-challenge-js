@@ -1,6 +1,5 @@
 import axios from 'axios'
 import FormData from 'form-data'
-import fs from 'fs'
 
 export function getData() {
   const apiUrl = process.env.API_DATA_URL
